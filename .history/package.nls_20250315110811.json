@@ -1,0 +1,7 @@
+{
+  "displayName": "Shortcut Customizer",
+  "description": "Customize and manage VSCode shortcuts through a visual interface",
+  "configureCommandsTitle": "Configure Commands",
+  "reloadCommandsTitle": "Reload Commands",
+  "commandsCategory": "Shortcut Customizer"
+}
