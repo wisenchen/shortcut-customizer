@@ -2,10 +2,10 @@ import * as vscode from 'vscode';
 import { CommandExecutionResult } from '../types';
 
 export class CommandExecutor {
-  static execute(command: string, params: Record<string, string>): CommandExecutionResult {
+  static execute(name: string, command: string, params?: Record<string, string>): CommandExecutionResult {
     try {
       const parsedCommand = this.replacePlaceholders(command, params);
-      const terminal = vscode.window.createTerminal('Custom Command');
+      const terminal = vscode.window.createTerminal(`${name}`);
       terminal.show();
       terminal.sendText(parsedCommand);
       return { success: true, output: `命令执行成功: ${parsedCommand}` };
@@ -14,7 +14,8 @@ export class CommandExecutor {
     }
   }
 
-  private static replacePlaceholders(command: string, params: Record<string, string>): string {
+  private static replacePlaceholders(command: string, params?: Record<string, string>): string {
+    if(!params) return command;
     return Object.entries(params).reduce(
       (cmd, [key, value]) => cmd.replace(new RegExp(`\$${key}\$`, 'g'), value),
       command
