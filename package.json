@@ -2,7 +2,7 @@
   "name": "shortcut-customizer",
   "displayName": "Command Shortcut Customizer",
   "description": "A VS Code extension that allows creating parameterized command shortcuts with visual configuration interface and hot-reload capability.",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "publisher": "wisen",
   "icon": "resource/icon.png",
   "engines": {
