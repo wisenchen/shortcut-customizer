@@ -1,5 +1,5 @@
-import * as vscode from 'vscode';
-import { CommandExecutionResult } from '../types';
+import * as vscode from "vscode";
+import { CommandExecutionResult } from "../types";
 
 export class CommandExecutor {
   static execute(name: string, command: string, params?: Record<string, string>): CommandExecutionResult {
@@ -15,9 +15,9 @@ export class CommandExecutor {
   }
 
   private static replacePlaceholders(command: string, params?: Record<string, string>): string {
-    if(!params) return command;
+    if (!params) return command;
     return Object.entries(params).reduce(
-      (cmd, [key, value]) => cmd.replace(new RegExp(`\$${key}\$`, 'g'), value),
+      (cmd, [key, value]) => cmd.replace(new RegExp(`\\$\\{${key}\\}\\$`, "g"), value),
       command
     );
   }
