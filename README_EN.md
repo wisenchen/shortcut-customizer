@@ -1,6 +1,6 @@
 # Command Shortcut Customizer
 
-[![English](https://img.shields.io/badge/Language-English-blue)](README.md) [![中文](https://img.shields.io/badge/语言-中文-red)](README_CN.md)
+[![中文](https://img.shields.io/badge/语言-中文-red)](README.md)
 
 A powerful VSCode extension that allows you to create custom shortcuts for executing commands, scripts, and supports parameterized configuration.
 

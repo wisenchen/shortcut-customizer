@@ -1,6 +1,6 @@
 # Command Shortcut Customizer
 
-[![English](https://img.shields.io/badge/Language-English-blue)](README.md) [![中文](https://img.shields.io/badge/语言-中文-red)](README_CN.md)
+[![English](https://img.shields.io/badge/Language-English-blue)](README_EN.md)
 
 一个强大的 VSCode 扩展，允许你创建自定义快捷键来执行命令、脚本，并支持参数化配置。
 
